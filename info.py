@@ -46,7 +46,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1004358264076').split()]  # Channel id for auto indexing (make sure bot is admin)
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1004373701034'))  # Log channel id (make sure bot is admin)
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1004373701034'))  # Bin channel id (make sure bot is admin)
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1004358264076'))  # Bin channel id (make sure bot is admin)
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1004373701034'))  # Premium logs channel id
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-100').split()] #(make sure bot is admin)
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1004292676722')  # Support group id (make sure bot is admin)
@@ -64,17 +64,17 @@ QR_CODE = environ.get('QR_CODE', 'https://files.catbox.moe/39uwl8.jpg')    # QR 
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'jayanthr859@okicici')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
-    10: "7day",
-    20: "15day",    
-    40: "1month", 
-    55: "45day",
-    75: "60day",
+    50: "7day",
+    100: "15day",    
+    140: "1month", 
+    170: "45day",
+    210: "60day",
 }  # Premium plans with their respective durations in days
 
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://godzilla2155:godzilla2155@cluster0.jp4cuyo.mongodb.net/?appName=Cluster0")  # MongoDB URI for the database
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ramu002488_db_user:Rxaj2Wj52b7ugo1E@cluster0.gmxd1h5.mongodb.net/?appName=Cluster0")  # MongoDB URI for the database
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0") # Database name (default: cluster)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'DᴜʙʙᴇᴅMᴏᴠɪᴇz_77_files') # Collection name (default: dreamcinezone_files)
 
